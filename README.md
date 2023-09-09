@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Todo List Live](https://todo-list-eight-ruddy.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/i-have-used-react-for-ui-and-tailwind-css-for-styling-components-Gjuw5VAw0Q)
 
 ## My process
 
