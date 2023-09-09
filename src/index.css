@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Custom CSS for styling checkboxes */
+/*
+.form-checkbox {
+  appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid gray; 
+  border-radius: 50%; 
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+*/
+
+/* Checked state */
+/*
+.form-checkbox:checked {
+  background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: 2px solid gray; 
+}
+*/
+/* Custom CSS for circular checkboxes with checkmark icon */
+.form-checkbox {
+  appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid gray; /* Border color */
+  border-radius: 50%; /* Border radius */
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative; /* Position for the checkmark icon */
+}
+
+/* Checked state */
+.form-checkbox:checked {
+  background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)); /* Background color when checked */
+  border: none;
+}
+
+/* Checkmark icon (hidden by default) */
+.form-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 0.6rem; /* Adjust the size of the checkmark */
+  height: 0.3rem; /* Adjust the size of the checkmark */
+  border: solid white; /* Checkmark color */
+  border-width: 0 0 2px 2px; /* Adjust border-width for rotation */
+  transform: rotate(-40deg); /* Rotate the checkmark */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the checkmark icon when the checkbox is checked */
+.form-checkbox:checked::before {
+  opacity: 1;
+}
